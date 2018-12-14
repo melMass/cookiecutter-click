@@ -18,20 +18,15 @@ pip install cookiecutter
 You can build a project directly from the github repository.
 
 ```bash
-cookiecutter https://github.com/patdaburu/cookiecutter-click
+cookiecutter https://github.com/melMass/cookiecutter-click
 ```
 
 #### Run the `make` Targets
 
-The template contains a cookiecutter [post-generate hook](http://cookiecutter.readthedocs.io/en/latest/advanced/hooks.html) that will attempt to do the following using targets in the project's [Makefile](https://www.gnu.org/software/make/):
-
-You may want to go about this differently according to your processes, but if you want to create a virtual environment for the project, install the dependencies, and set up the comman-line application, you can use the `make` targets defined in the project like so.
-
-There are several other `make` targets so have a look at the `Makefile` if you're interested.
+There are several `make` targets so have a look at the `Makefile` if you're interested.
 
 ```bash
 cd <project-name>
-make venv
 make install
 make build
 ```
@@ -48,11 +43,9 @@ If you get the template help message, you're ready to start building.
 
 ## Project Features
 
-The project you create from this template has a few features to be aware of including:
-
-* a [click](http://click.pocoo.org/5/) application to get you going;
-* [pytest](https://docs.pytest.org/en/latest/) unit tests; and
-* a documentation project based on [Sphinx](http://www.sphinx-doc.org/en/master/usage/quickstart.html).
+- A [click cli](http://click.pocoo.org/5/) application to get you going;
+- [pytest unit tests](https://docs.pytest.org/en/latest/)
+- A project documentation based on [Sphinx](http://www.sphinx-doc.org/en/master/usage/quickstart.html).
 
 ## Resources
 
@@ -68,8 +61,9 @@ Would you like to learn more?  Check out the links below!
 ## Authors
 
 * **Pat Daburu** - *Initial work* - [github](https://github.com/patdaburu)
+* **Mel Massadian** - *This Fork* - [github](https://github.com/melMass)
 
-See also the list of [contributors](https://github.com/patdaburu/cookiecutter-click/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/melMass/cookiecutter-click/graphs/contributors) who participated in this project.
 
 ## License
 

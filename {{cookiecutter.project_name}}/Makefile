@@ -15,7 +15,7 @@ define colorecho
 endef
 
 build:
-	pip install --editable .
+	pip install --editable . -U
 
 run:
 	$(CLI_NAME) run
@@ -62,17 +62,6 @@ clean :
 	rm -rf docs/build \
 	rm -rf *.egg-info
 	coverage erase
-
-venv :
-	virtualenv --python python$(PY_VERSION) venv
-	@echo
-	@echo To activate the environment, use the following command:
-	@echo
-	$(call colorecho, $(GREEN), "source venv/bin/activate")
-	@echo
-	@echo Once activated, you can use the 'install' target to install dependencies:
-	@echo
-	$(call colorecho, $(GREEN), "source venv/bin/activate")
 
 install:
 	pip install -r requirements.txt
