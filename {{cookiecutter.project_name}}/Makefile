@@ -17,8 +17,8 @@ endef
 install:
 	pip install --editable . -U
 
-install:
-	pip uninstall $(PROJ_SLUG)}
+uninstall:
+	pip uninstall $(PROJ_SLUG)
 run:
 	$(CLI_NAME) run
 
