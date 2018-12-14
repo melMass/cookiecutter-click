@@ -14,9 +14,11 @@ define colorecho
         @tput sgr0
 endef
 
-build:
+install:
 	pip install --editable . -U
 
+install:
+	pip uninstall $(PROJ_SLUG)}
 run:
 	$(CLI_NAME) run
 
@@ -63,7 +65,7 @@ clean :
 	rm -rf *.egg-info
 	coverage erase
 
-install:
+deps:
 	pip install -r requirements.txt
 
 licenses:
