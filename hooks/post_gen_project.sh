@@ -20,5 +20,5 @@ PYTHON
 echo -e "\033[1m\033[4mDone\033[0m"
 echo -e "\033[1m\033[4mNext Steps\033[0m"
 echo -e "\033[32mcd {{cookiecutter.project_name}}\033[0m"
-echo -e "\033[32msource venv/bin/activate\033[0m"
-echo -e "\033[32m{{cookiecutter.cli_name}} --help\033[0m"
+#echo -e "\033[32msource venv/bin/activate\033[0m"
+#echo -e "\033[32m{{cookiecutter.cli_name}} --help\033[0m"
